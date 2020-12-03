@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -493,14 +494,6 @@
     <Compile Include="Demonstrations\IntroToCss.aspx.designer.cs">
       <DependentUpon>IntroToCss.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201512122158050_InitialCreate.cs" />
-    <Compile Include="Migrations\201512122158050_InitialCreate.Designer.cs">
-      <DependentUpon>201512122158050_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201512122207099_Adding Items.cs" />
-    <Compile Include="Migrations\201512122207099_Adding Items.Designer.cs">
-      <DependentUpon>201512122207099_Adding Items.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Hobby.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -550,14 +543,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201512122158050_InitialCreate.resx">
-      <DependentUpon>201512122158050_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201512122207099_Adding Items.resx">
-      <DependentUpon>201512122207099_Adding Items.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
