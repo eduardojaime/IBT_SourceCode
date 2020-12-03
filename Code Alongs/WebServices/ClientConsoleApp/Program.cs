@@ -1,5 +1,4 @@
-﻿using ClientConsoleApp.WCFContactsService;
-using ClientConsoleApp.WCFService;
+﻿using ClientConsoleApp.StudentsService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +11,16 @@ namespace ClientConsoleApp
     {
         static void Main(string[] args)
         {
-            ContactsServiceClient service = new ContactsServiceClient();
-            Console.WriteLine(service.DoWork());
-            Console.ReadKey();
+            StudentsServiceClient client = new StudentsServiceClient();
 
-            ServiceClient service1 = new ServiceClient();
-            CompositeType myCompositeType = new CompositeType();
-            myCompositeType.StringValue = "testing";
-            service1.GetDataUsingDataContract(myCompositeType);
+            var results = client.GetStudentsByCountry("Colombia");
+
+            foreach (Student student in results)
+            {
+                Console.WriteLine(String.Format("{0} {1} - {2}", student.FirstName, student.LastName, student.EmailAddr));
+            }
+
+            Console.ReadKey();
 
         }
     }

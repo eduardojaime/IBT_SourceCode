@@ -45,12 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\WCFContactsService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\WCFService\Reference.cs">
+    <Compile Include="Connected Services\StudentsService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -60,24 +55,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\WCFContactsService\ContactsService.wsdl" />
-    <None Include="Connected Services\WCFContactsService\ContactsService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\WCFContactsService\ContactsService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\WCFService\ClientConsoleApp.WCFService.CompositeType.datasource">
+    <None Include="Connected Services\StudentsService\ClientConsoleApp.StudentsService.Student.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WCFService\Service.wsdl" />
-    <None Include="Connected Services\WCFService\Service.xsd">
+    <None Include="Connected Services\StudentsService\StudentsService.wsdl" />
+    <None Include="Connected Services\StudentsService\StudentsService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WCFService\Service1.xsd">
+    <None Include="Connected Services\StudentsService\StudentsService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WCFService\Service2.xsd">
+    <None Include="Connected Services\StudentsService\StudentsService2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -85,32 +73,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\WCFContactsService\" />
-    <WCFMetadataStorage Include="Connected Services\WCFService\" />
+    <WCFMetadataStorage Include="Connected Services\StudentsService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WCFContactsService\configuration91.svcinfo" />
+    <None Include="Connected Services\StudentsService\StudentsService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WCFContactsService\configuration.svcinfo" />
+    <None Include="Connected Services\StudentsService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WCFContactsService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <None Include="Connected Services\StudentsService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WCFService\Service.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\WCFService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\WCFService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\WCFService\Reference.svcmap">
+    <None Include="Connected Services\StudentsService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
