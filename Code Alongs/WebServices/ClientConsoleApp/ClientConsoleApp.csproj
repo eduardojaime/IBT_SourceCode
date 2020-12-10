@@ -45,6 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\OnlineStudentsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\StudentsService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -55,6 +60,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\OnlineStudentsService\ClientConsoleApp.OnlineStudentsService.Student.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\OnlineStudentsService\StudentsService.wsdl" />
+    <None Include="Connected Services\OnlineStudentsService\StudentsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\OnlineStudentsService\StudentsService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\OnlineStudentsService\StudentsService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\StudentsService\ClientConsoleApp.StudentsService.Student.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -73,6 +91,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\OnlineStudentsService\" />
     <WCFMetadataStorage Include="Connected Services\StudentsService\" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +105,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\StudentsService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\OnlineStudentsService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\OnlineStudentsService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\OnlineStudentsService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

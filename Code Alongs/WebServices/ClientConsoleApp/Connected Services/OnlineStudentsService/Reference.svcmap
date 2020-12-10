@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="43b4cb97-0766-482b-996e-df03fa67dad3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ibtcollegeapp.somee.com/StudentsService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="StudentsService.wsdl" MetadataType="Wsdl" ID="b0b13396-1b4a-48b4-bacf-157894d07342" SourceId="1" SourceUrl="http://ibtcollegeapp.somee.com/StudentsService.svc?wsdl" />
+    <MetadataFile FileName="StudentsService.xsd" MetadataType="Schema" ID="1801b51c-a7b4-485b-b52f-22bc8ed684d4" SourceId="1" SourceUrl="http://ibtcollegeapp.somee.com/StudentsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="StudentsService1.xsd" MetadataType="Schema" ID="73366461-3362-432d-b131-906c6314c69b" SourceId="1" SourceUrl="http://ibtcollegeapp.somee.com/StudentsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="StudentsService2.xsd" MetadataType="Schema" ID="535769ca-ea6c-4e8a-8639-dbfe77dc64b2" SourceId="1" SourceUrl="http://ibtcollegeapp.somee.com/StudentsService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
